@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  learning_db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Test100
+      MYSQL_USERNAME: little_lemon
+      MYSQL_PASSWORD: test100
+      MYSQL_DATABASE: little_lemon
+    ports:
+      - 3300:3306
